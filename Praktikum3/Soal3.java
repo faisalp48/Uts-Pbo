@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Soal3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int panjang, lebar, keliling, luas;
+        int keliling, luas, sisi;
         System.out.println("Masukkan metode ");
         System.out.println("1.Menghitung Luas Persegi");
         System.out.println("2.Menghitung Keliling Persegi");
@@ -23,14 +23,14 @@ public class Soal3 {
         switch(pilihan){
             case 1:
             System.out.print("Masukkan panjang sisi persegi = ");
-            panjang = scan.nextInt();
-            luas = panjang * panjang;
+            sisi = scan.nextInt();
+            luas = sisi * sisi;
             System.out.println("Luas persegi adalah "+ luas +" cm");
             break;
             case 2:
             System.out.print("Masukkan panjang sisi persegi = ");
-            panjang = scan.nextInt();
-            keliling = 2 * (panjang + panjang);
+            sisi = scan.nextInt();
+            keliling = 4 * sisi;
             System.out.println("keliling persegi adalah "+ keliling +" cm");
             break;
             default:
